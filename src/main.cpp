@@ -40,7 +40,9 @@ class $modify(MenuLayer)
 			{
 				if (btn2)
 				{
-					cocos2d::CCApplication::sharedApplication()->openURL("steam://store/322170");
+					bool steamdb = Mod::get()->getSettingValue<bool>("steam-db");
+					const char* url = steamdb ? "https://steamdb.info/app/322170/history/" : "steam://store/322170";
+					cocos2d::CCApplication::sharedApplication()->openURL(url);
 				}
 			}
 		);

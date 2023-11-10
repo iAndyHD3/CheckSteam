@@ -9,6 +9,15 @@
 		"sprites": [
 			"resources/steam.png"
 		]
+	},
+	"settings": {
+		"steam-db": {
+			"name": "Open SteamDB Link",
+			"type": "bool",
+			"description": "Opens the SteamDB branch history link instead of opening the steam client",
+			"default": false
+		}
+		
 	}
 
 
